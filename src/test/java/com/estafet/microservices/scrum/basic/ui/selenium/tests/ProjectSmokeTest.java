@@ -1,7 +1,6 @@
 package com.estafet.microservices.scrum.basic.ui.selenium.tests;
 
 import static org.junit.Assert.*;
-import static org.hamcrest.core.Is.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +10,6 @@ import com.estafet.microservices.scrum.lib.selenium.pages.project.NewProjectPage
 import com.estafet.microservices.scrum.lib.selenium.pages.project.ProjectBurndownPage;
 import com.estafet.microservices.scrum.lib.selenium.pages.project.ProjectListPage;
 import com.estafet.microservices.scrum.lib.selenium.pages.project.ProjectPage;
-import com.estafet.microservices.scrum.lib.selenium.pages.sprint.SprintBurndownPage;
 
 public class ProjectSmokeTest {
 
@@ -33,12 +31,8 @@ public class ProjectSmokeTest {
 		assertTrue(newProjectPage.isLoaded());
 		ProjectPage projectPage = newProjectPage.clickSubmitButton();
 		assertTrue(projectPage.isLoaded());
-		assertThat(projectPage.getStories().size(), is(5));
 		ProjectBurndownPage projectBurndownPage = projectPage.clickProjectBurndownLink();
 		assertTrue(projectBurndownPage.isLoaded());
-		SprintBurndownPage sprintBurndownPage = projectBurndownPage.clickProjectBreadCrumbLink()
-				.clickSprintBurndownLink();
-		assertTrue(sprintBurndownPage.isLoaded());
 	}
 
 }
