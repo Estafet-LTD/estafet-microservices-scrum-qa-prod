@@ -21,22 +21,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.estafet.microservices.scrum</groupId>
-			<artifactId>microservices-scrum-commons-lib</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.estafet.microservices.scrum</groupId>
 			<artifactId>microservices-scrum-pages-lib</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.3</version>
 			<scope>test</scope>
-		</dependency>		
-		<dependency>
-			<groupId>com.estafet.microservices.scrum</groupId>
-			<artifactId>microservices-scrum-data-lib</artifactId>
-			<version>1.0.5</version>
-			<scope>test</scope>
-		</dependency>		
+		</dependency>			
    	</dependencies> 	
 
 	<distributionManagement>
