@@ -22,16 +22,20 @@
 		<dependency>
 			<groupId>com.estafet.microservices.scrum</groupId>
 			<artifactId>microservices-scrum-pages-lib</artifactId>
-			<version>1.0.3</version>
+			<version>1.0.4</version>
 			<scope>test</scope>
 		</dependency>			
    	</dependencies> 	
 
 	<distributionManagement>
-	   <snapshotRepository>
-	      <id>nexus-snapshots</id>
-	      <url>http://nexus.cicd.svc:8081/nexus/content/repositories/snapshots</url>
-	   </snapshotRepository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://nexus.nexus.svc:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://nexus.nexus.svc:8081/nexus/content/repositories/releases</url>
+		</repository>
 	</distributionManagement>
 		
 </project>
